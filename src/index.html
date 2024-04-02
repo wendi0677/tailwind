@@ -1,435 +1,390 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tailwind練習</title>
-    <!-- 連結tailwind -->
-    <link href="./output.css" rel="stylesheet" />
-  </head>
 
-  <body class="flex h-full flex-col">
-    <header class="relative z-50 w-full py-4 bg-blue-800">
-      <nav class="mx-auto max-w-full px-4 sm:px-6 lg:px-8 flex justify-between">
-        <a href="">
-          <img
-            src="https://hr.yuanta.com/MA/assets/images/brand-white.svg"
-            class="w-auto h-10"
-            alt=""
-          />
-        </a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tailwind練習</title>
+  <!-- 連結tailwind -->
+  <link href="./output.css" rel="stylesheet" />
+</head>
 
-    <main class="overflow-hidden pb-16 shadow-lg md:pb-20 xl:pb-48">
-      <div
-        class="min-h-screen flex flex-1 shrink-0 items-center justify-center mb-16 bg-blue-50"
-      >
-        <!-- image - start -->
-        <img
-          src="/img/div.img.svg"
-          loading="lazy"
-          alt="Photo by Fakurian Design"
-          class="h-auto w-auto px-5"
-        />
-        <!-- image - end -->
-      </div>
-      <!-- section 1 -->
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
-        <h2
-          class="text-4xl leading-relaxed font-bold text-blue-800 text-center pb-6"
-        >
-          加入一個值得期待的金融企業，<br />成就一生的夢想志業！
-        </h2>
-        <p class="text-xl leading-normal text-center">
-          元大金控涵蓋業務廣泛、企業制度完整、培訓輔導架構健全，<br />
-          讓每位MA擁有盡情發揮特長的空間，並在短時間內獲得顯著的成長。
-        </p>
-      </div>
-      <!-- section 2 -->
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
-        <div>
-          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-2 lg:gap-8">
-            <!-- plan - start -->
-            <div
-              class="flex flex-col justify-between rounded-3xl bg-gray-50 border ring-gray-200 p-12 shadow hover:shadow-lg"
-            >
-              <div class="mb-12">
-                <img
-                  src="/img/about1.svg.png"
-                  class="max-h-40 w-auto text-center mx-auto mb-6"
-                  alt=""
-                />
-                <div class="space-y-2 text-lg text-gray-700">
-                  <p>
-                    我們長期深耕台灣，逐年完備體系、擴展業務，形成涵蓋證券、銀行、人壽、期貨、投信、投顧、創投及資產管理等業務之金融集團，這些成果將與你共榮共享。
-                  </p>
-                </div>
-              </div>
+<body class="flex h-full flex-col">
+  <header class="relative z-50 w-full py-4 bg-blue-800">
+    <nav class="mx-auto max-w-full px-4 sm:px-6 lg:px-8 flex justify-between">
+      <a href="">
+        <img src="https://hr.yuanta.com/MA/assets/images/brand-white.svg" class="w-auto h-10" alt="" />
+      </a>
+    </nav>
+  </header>
 
-              <a
-                href="#"
-                class="block rounded-lg bg-blue-800 px-8 py-3 text-center text-sm font-semibold text-white transition duration-100 hover:bg-blue-600 focus-visible:ring active:text-white md:text-base"
-                >想了解更多</a
-              >
-            </div>
-            <div
-              class="flex flex-col justify-between rounded-3xl bg-gray-50 border ring-gray-200 p-12 shadow hover:shadow-lg"
-            >
-              <div class="mb-12">
-                <img
-                  src="/img/about2.svg.png"
-                  class="max-h-40 w-auto text-center mx-auto mb-6"
-                  alt=""
-                />
-                <div class="space-y-2 text-lg text-gray-700">
-                  <p>
-                    卓越的表現是企業全體共同成績，因此我們更重視人才的培育及其職涯發展。我們希望，每個進入元大的成員，能夠在自己的領域發光發熱，與元大一起創造金融服務新價值！
-                  </p>
-                </div>
-              </div>
-
-              <a
-                href="#"
-                class="block rounded-lg bg-blue-800 px-8 py-3 text-center text-sm font-semibold text-white transition duration-100 hover:bg-blue-600 focus-visible:ring active:text-white md:text-base"
-                >想了解更多</a
-              >
-            </div>
-          </div>
-          <!-- plan - end -->
-        </div>
-      </div>
-      <!-- section 3 -->
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
-        <p class="text-xl leading-relaxed text-center">
-          我們正在尋找一群具備市場財經敏感度、擅長以邏輯分析解決問題，<br />並且擁有良好溝通協調與學習能力的菁英人才，參與這項嚴密的育才計畫。<br />透過由廣而深、由深而博的專精訓練，引導MA在歷練中成熟、獨當一面，逐步成為業界佼佼者。
-        </p>
-      </div>
-      <!-- section 4 -->
-      <div class="relative flex py-20 items-center justify-center">
-        <img
-          src="https://salient.tailwindui.com/_next/static/media/background-call-to-action.6a5a5672.jpg"
-          loading="lazy"
-          alt="Photo by Fakurian Design"
-          class="absolute inset-0 h-full w-full object-cover object-center"
-        />
-
-        <div class="relative items-center">
-          <p class="text-3xl font-bold leading-relaxed text-center text-white">
-            歡迎企圖心旺盛、抗壓性高的築夢青年加入我們，<br />成為下一個改變世界的金融家！
-          </p>
-        </div>
-      </div>
-      <!-- section 5&6 培訓架構＆職涯發展 -->
-      <div class="bg-blue-50 py-24 mb-20">
-        <!-- section 5 培訓架構 -->
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-12">
-          <h3 class="text-3xl font-bold text-center mb-8">培訓架構</h3>
-          <p
-            class="max-w-screen-xl flex justify-center mb-8 text-lg leading-relaxed"
-          >
-            我們提供專業訓練課程及輪調實習，帶領MA快速掌握業務核心；通過部門歷練及專案執行，在兩年內厚植專業根基、累積實務經驗；
-            培訓期間，我們將安排Coach專業指導及人資學長姊輔導，協助MA學習金融實務，加速養成專業經理人思維，並邀請企業高階主管擔任
-            Mentor，提高職涯能見度及拓展視野。
-          </p>
-
+  <main class="overflow-hidden pb-16 shadow-lg md:pb-20 xl:pb-48">
+    <div class="min-h-screen flex flex-1 shrink-0 items-center justify-center mb-16 bg-blue-50">
+      <!-- image - start -->
+      <img src="/img/div.img.svg" loading="lazy" alt="Photo by Fakurian Design" class="h-auto w-auto px-5" />
+      <!-- image - end -->
+    </div>
+    <!-- section 1 -->
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
+      <h2 class="text-4xl leading-relaxed font-bold text-blue-800 text-center pb-6">
+        加入一個值得期待的金融企業，<br />成就一生的夢想志業！
+      </h2>
+      <p class="text-xl leading-normal text-center">
+        元大金控涵蓋業務廣泛、企業制度完整、培訓輔導架構健全，<br />
+        讓每位MA擁有盡情發揮特長的空間，並在短時間內獲得顯著的成長。
+      </p>
+    </div>
+    <!-- section 2 -->
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
+      <div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-2 lg:gap-8">
+          <!-- plan - start -->
           <div
-            class="grid grid-cols-3 gap-4 items-center rounded-3xl bg-gray-50 border ring-gray-200 py-12 px-20"
-          >
-            <div class="grid grid-rows-3 gap-4 items-center h-2/3">
-              <div>
-                <div class="flex items-center">
-                  <img src="/img/Frame 406.svg" class="me-4" alt="" />
-                  <div>
-                    <label class="font-medium text-blue-800 text-xl"
-                      >集團Mentor</label
-                    >
-                    <p class="text-lg">高階主管職涯指引</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="flex items-center">
-                  <img src="/img/Frame 407.svg" class="me-4" alt="" />
-                  <div>
-                    <label class="font-medium text-blue-800 text-xl"
-                      >專屬Coach</label
-                    >
-                    <p class="text-lg">部室主管專業指導</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="flex items-center">
-                  <img src="/img/Frame 408.svg" class="me-4" alt="" />
-                  <div>
-                    <label class="font-medium text-blue-800 text-xl"
-                      >專屬Counselor</label
-                    >
-                    <p class="text-lg">人資學長姐關懷輔導</p>
-                  </div>
-                </div>
+            class="flex flex-col justify-between rounded-3xl bg-gray-50 border ring-gray-200 p-12 shadow hover:shadow-lg">
+            <div class="mb-12">
+              <img src="/img/about1.svg.png" class="max-h-40 w-auto text-center mx-auto mb-6" alt="" />
+              <div class="space-y-2 text-lg text-gray-700">
+                <p>
+                  我們長期深耕台灣，逐年完備體系、擴展業務，形成涵蓋證券、銀行、人壽、期貨、投信、投顧、創投及資產管理等業務之金融集團，這些成果將與你共榮共享。
+                </p>
               </div>
             </div>
-            <img
-              src="/img/image 14.png"
-              class="col-span-2 h-auto w-auto"
-              alt=""
-            />
-          </div>
-        </div>
-        <!-- section 6 職涯發展 -->
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-12">
-          <h3 class="text-3xl font-bold text-center mb-8">職涯發展</h3>
-          <p
-            class="max-w-screen-xl flex justify-center mb-8 text-lg leading-relaxed"
-          >
-            我們尤其著重發掘個人職業潛能，同時以健全的企業制度及暢通的升遷管道育才、用才、留才。而MA計畫除了備有全方位、系統化的訓練指導體系，MA將有更多機會參與公司大型專案及重要任務，快速充實各方面專業能力、提升視野，並擁有寬廣的發展空間及晉升機會。
-          </p>
 
+            <a href="#"
+              class="block rounded-lg bg-blue-800 px-8 py-3 text-center text-sm font-semibold text-white transition duration-100 hover:bg-blue-600 focus-visible:ring active:text-white md:text-base">想了解更多</a>
+          </div>
           <div
-            class="grid grid-cols-3 gap-4 items-center rounded-3xl bg-gray-50 border ring-gray-200 py-12 px-20"
-          >
-            <div class="grid grid-rows-3 gap-4 items-center h-2/3">
-              <div>
-                <div class="flex items-center">
-                  <img src="/img/Frame 406.svg" class="me-4" alt="" />
-                  <div>
-                    <label class="font-medium text-blue-800 text-xl"
-                      >集團Mentor</label
-                    >
-                    <p class="text-lg">高階主管職涯指引</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="flex items-center">
-                  <img src="/img/Frame 407.svg" class="me-4" alt="" />
-                  <div>
-                    <label class="font-medium text-blue-800 text-xl"
-                      >專屬Coach</label
-                    >
-                    <p class="text-lg">部室主管專業指導</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="flex items-center">
-                  <img src="/img/Frame 408.svg" class="me-4" alt="" />
-                  <div>
-                    <label class="font-medium text-blue-800 text-xl"
-                      >專屬Counselor</label
-                    >
-                    <p class="text-lg">人資學長姐關懷輔導</p>
-                  </div>
-                </div>
+            class="flex flex-col justify-between rounded-3xl bg-gray-50 border ring-gray-200 p-12 shadow hover:shadow-lg">
+            <div class="mb-12">
+              <img src="/img/about2.svg.png" class="max-h-40 w-auto text-center mx-auto mb-6" alt="" />
+              <div class="space-y-2 text-lg text-gray-700">
+                <p>
+                  卓越的表現是企業全體共同成績，因此我們更重視人才的培育及其職涯發展。我們希望，每個進入元大的成員，能夠在自己的領域發光發熱，與元大一起創造金融服務新價值！
+                </p>
               </div>
             </div>
-            <img
-              src="/img/image 14.png"
-              class="col-span-2 h-auto w-auto"
-              alt=""
-            />
+
+            <a href="#"
+              class="block rounded-lg bg-blue-800 px-8 py-3 text-center text-sm font-semibold text-white transition duration-100 hover:bg-blue-600 focus-visible:ring active:text-white md:text-base">想了解更多</a>
           </div>
         </div>
+        <!-- plan - end -->
       </div>
-      <!-- section 7 職缺介紹 -->
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
-        <h3 class="text-3xl font-bold text-center mb-8">職缺介紹</h3>
-        <p
-          class="max-w-screen-xl flex justify-center mb-8 text-lg leading-relaxed"
-        >
-          迎接跨界人才整合的時代，我們招募各專業領域優秀表現者，進入其適宜的部門。只要是特質、潛能及基本條件符合的人選，即便在校所學非財務金融相關，
-          透過 MA 計畫的訓練及發掘，都可以在這裡找到屬於自己的舞台。
-        </p>
+    </div>
+    <!-- section 3 -->
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
+      <p class="text-xl leading-relaxed text-center">
+        我們正在尋找一群具備市場財經敏感度、擅長以邏輯分析解決問題，<br />並且擁有良好溝通協調與學習能力的菁英人才，參與這項嚴密的育才計畫。<br />透過由廣而深、由深而博的專精訓練，引導MA在歷練中成熟、獨當一面，逐步成為業界佼佼者。
+      </p>
+    </div>
+    <!-- section 4 -->
+    <div class="relative flex py-20 items-center justify-center">
+      <img src="https://salient.tailwindui.com/_next/static/media/background-call-to-action.6a5a5672.jpg" loading="lazy"
+        alt="Photo by Fakurian Design" class="absolute inset-0 h-full w-full object-cover object-center" />
 
-        <div class="grid grid-cols-4 gap-8 items-center">
-          <div class="flex flex-col items-center rounded-2xl bg-blue-800 py-12">
-            <img src="/img/Frame 406.svg" class="mb-4" alt="" />
-            <label class="font-medium text-white text-xl"
-              >策略發展 <br />儲備幹部</label
-            >
-          </div>
-
-          <div class="flex flex-col items-center rounded-2xl bg-blue-800 py-12">
-            <img src="/img/Frame 407.svg" class="mb-4" alt="" />
-            <label class="font-medium text-white text-xl"
-              >投行法金<br />儲備幹部</label
-            >
-          </div>
-
-          <div class="flex flex-col items-center rounded-2xl bg-blue-800 py-12">
-            <img src="/img/Frame 408.svg" class="mb-4" alt="" />
-            <label class="font-medium text-white text-xl"
-              >數位金融<br />儲備幹部</label
-            >
-          </div>
-
-          <div class="flex flex-col items-center rounded-2xl bg-blue-800 py-12">
-            <img src="/img/Frame 408.svg" class="mb-4" alt="" />
-            <label class="font-medium text-white text-xl"
-              >投資研究<br />儲備幹部</label
-            >
-          </div>
-        </div>
-      </div>
-      <!-- section 8 學長姐介紹 -->
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
-        <div class="flex items-center">
-          <img src="/img/div.img.svg" class="h-80 w-auto" alt="" />
-          <p class="">
-            對於初步入社會的新鮮人，我們瞭解你的未解與徬徨，讓元大MA學長姊用自身經驗告訴你，加入這個計畫，將會為一生職業生涯帶來最豐富的收穫。
-          </p>
-        </div>
-        <div></div>
-      </div>
-
-      <!-- section 9 -->
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
-        <p class="text-xl leading-relaxed text-center">
-          元大 MA 計畫招募推廣活動，正緊鑼密鼓的展開，<br />
-          我們將舉辦多場企業說明會、校園博覽會，<br />
-          歡迎各位前來與我們面對面溝通，增進彼此的了解。<br />
-          若你已經開始嚮往成為這裡的一員，請立即參加甄選，邁開人生夢想的第一步！
+      <div class="relative items-center">
+        <p class="text-3xl font-bold leading-relaxed text-center text-white">
+          歡迎企圖心旺盛、抗壓性高的築夢青年加入我們，<br />成為下一個改變世界的金融家！
         </p>
       </div>
+    </div>
+    <!-- section 5&6 培訓架構＆職涯發展 -->
+    <div class="bg-blue-50 py-24 mb-20">
+      <!-- section 5 培訓架構 -->
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-12">
+        <h3 class="text-3xl font-bold text-center mb-8">培訓架構</h3>
+        <p class="max-w-screen-xl flex justify-center mb-8 text-lg leading-relaxed">
+          我們提供專業訓練課程及輪調實習，帶領MA快速掌握業務核心；通過部門歷練及專案執行，在兩年內厚植專業根基、累積實務經驗；
+          培訓期間，我們將安排Coach專業指導及人資學長姊輔導，協助MA學習金融實務，加速養成專業經理人思維，並邀請企業高階主管擔任
+          Mentor，提高職涯能見度及拓展視野。
+        </p>
 
-      <!-- section 10 -->
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
-        <div>
-          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-2 lg:gap-8">
-            <!--申請日期-->
+        <div class="grid grid-cols-3 gap-4 items-center rounded-3xl bg-gray-50 border ring-gray-200 py-12 px-20">
+          <div class="grid grid-rows-3 gap-4 items-center h-2/3">
             <div>
-              <h3 class="text-3xl font-bold text-center mb-8">申請日期</h3>
-              <div
-                class="flex flex-col justify-between rounded-3xl bg-gray-50 border ring-gray-200 p-12 shadow"> 
-                <div class="flex flex-col items-center">
-                  <h3 class="text-3xl font-bold mb-6">即日起至</h3>
-                  <div class="flex justify-center items-end">
-                    <p class="text-4xl font-bold text-blue-800 me-2">2023-03-19</p>
-                    <p class="font-bold">止</p>
-                  </div>
+              <div class="flex items-center">
+                <img src="/img/Frame 406.svg" class="me-4" alt="" />
+                <div>
+                  <label class="font-medium text-blue-800 text-xl">集團Mentor</label>
+                  <p class="text-lg">高階主管職涯指引</p>
                 </div>
               </div>
             </div>
-            <!--申請資格-->
             <div>
-              <h3 class="text-3xl font-bold text-center mb-8">申請資格</h3>
-              <div
-                class="flex flex-col justify-between rounded-3xl bg-gray-50 border ring-gray-200 p-12 shadow"> 
-                <ul class="list-disc">
-                  <li>研究所以上學歷，科系不限。</li>
-                  <li>英文流利（具 TOEIC 750 分以上或同等能力證明）。</li>
-                  <li>具相關金融證照、海外經驗者優先。</li>
-                  <li>主動積極，具市場及財經敏感度，有強烈企圖心，擅長邏輯思考與問題分析解決，溝通及學習力強，樂於接受挑戰者。</li>
-                </ul>
+              <div class="flex items-center">
+                <img src="/img/Frame 407.svg" class="me-4" alt="" />
+                <div>
+                  <label class="font-medium text-blue-800 text-xl">專屬Coach</label>
+                  <p class="text-lg">部室主管專業指導</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center">
+                <img src="/img/Frame 408.svg" class="me-4" alt="" />
+                <div>
+                  <label class="font-medium text-blue-800 text-xl">專屬Counselor</label>
+                  <p class="text-lg">人資學長姐關懷輔導</p>
+                </div>
               </div>
             </div>
           </div>
-
+          <img src="/img/image 14.png" class="col-span-2 h-auto w-auto" alt="" />
         </div>
-          <!-- plan - end -->
       </div>
-      
+      <!-- section 6 職涯發展 -->
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-12">
+        <h3 class="text-3xl font-bold text-center mb-8">職涯發展</h3>
+        <p class="max-w-screen-xl flex justify-center mb-8 text-lg leading-relaxed">
+          我們尤其著重發掘個人職業潛能，同時以健全的企業制度及暢通的升遷管道育才、用才、留才。而MA計畫除了備有全方位、系統化的訓練指導體系，MA將有更多機會參與公司大型專案及重要任務，快速充實各方面專業能力、提升視野，並擁有寬廣的發展空間及晉升機會。
+        </p>
 
-      <!-- section  徵選時程 -->
-      <div class="container justify-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
-        <h3 class="text-3xl font-bold text-center mb-8">徵選時程</h3>
-        <div class="flex w-full justify-between">
-          <div class="z-10 flex flex-col items-center w-2">
-            <div
-              class="bg-blue-600 rounded-full w-6 h-6 border border-black"
-            ></div>
-            <div class="border-l border-black h-8"></div>
-            <div class="rounded-full w-2 h-2 border border-black"></div>
-            <div class="absolute mt-20 text-lg text-blue-700 font-semibold">
-              3/19
+        <div class="grid grid-cols-3 gap-4 items-center rounded-3xl bg-gray-50 border ring-gray-200 py-12 px-20">
+          <div class="grid grid-rows-3 gap-4 items-center h-2/3">
+            <div>
+              <div class="flex items-center">
+                <img src="/img/Frame 406.svg" class="me-4" alt="" />
+                <div>
+                  <label class="font-medium text-blue-800 text-xl">集團Mentor</label>
+                  <p class="text-lg">高階主管職涯指引</p>
+                </div>
+              </div>
             </div>
-            <p class="absolute mt-28 text-lg">履歷截止收件</p>
+            <div>
+              <div class="flex items-center">
+                <img src="/img/Frame 407.svg" class="me-4" alt="" />
+                <div>
+                  <label class="font-medium text-blue-800 text-xl">專屬Coach</label>
+                  <p class="text-lg">部室主管專業指導</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center">
+                <img src="/img/Frame 408.svg" class="me-4" alt="" />
+                <div>
+                  <label class="font-medium text-blue-800 text-xl">專屬Counselor</label>
+                  <p class="text-lg">人資學長姐關懷輔導</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="flex-grow bg-blue-100 h-6"></div>
+          <img src="/img/image 14.png" class="col-span-2 h-auto w-auto" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- section 7 職缺介紹 -->
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
+      <h3 class="text-3xl font-bold text-center mb-8">職缺介紹</h3>
+      <p class="max-w-screen-xl flex justify-center mb-8 text-lg leading-relaxed">
+        迎接跨界人才整合的時代，我們招募各專業領域優秀表現者，進入其適宜的部門。只要是特質、潛能及基本條件符合的人選，即便在校所學非財務金融相關，
+        透過 MA 計畫的訓練及發掘，都可以在這裡找到屬於自己的舞台。
+      </p>
 
-          <div class="z-10 flex flex-col items-center w-2">
-            <div
-              class="bg-blue-600 rounded-full w-6 h-6 border border-black"
-            ></div>
-            <div class="border-l border-black h-8"></div>
-            <div class="rounded-full w-2 h-2 border border-black"></div>
-            <date class="absolute mt-20 text-lg text-blue-700 font-semibold"
-              >3/23前</date
-            >
-            <p class="absolute mt-28 text-lg">資格及履歷書面審查</p>
+      <div class="grid grid-cols-4 gap-8 items-center">
+        <div class="flex flex-col items-center rounded-2xl bg-blue-800 py-12">
+          <img src="/img/Frame 406.svg" class="mb-4" alt="" />
+          <label class="font-medium text-white text-xl">策略發展 <br />儲備幹部</label>
+        </div>
+
+        <div class="flex flex-col items-center rounded-2xl bg-blue-800 py-12">
+          <img src="/img/Frame 407.svg" class="mb-4" alt="" />
+          <label class="font-medium text-white text-xl">投行法金<br />儲備幹部</label>
+        </div>
+
+        <div class="flex flex-col items-center rounded-2xl bg-blue-800 py-12">
+          <img src="/img/Frame 408.svg" class="mb-4" alt="" />
+          <label class="font-medium text-white text-xl">數位金融<br />儲備幹部</label>
+        </div>
+
+        <div class="flex flex-col items-center rounded-2xl bg-blue-800 py-12">
+          <img src="/img/Frame 408.svg" class="mb-4" alt="" />
+          <label class="font-medium text-white text-xl">投資研究<br />儲備幹部</label>
+        </div>
+      </div>
+    </div>
+    <!-- section 8 學長姐介紹 -->
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
+      <div class="flex items-center">
+        <img src="/img/div.img.svg" class="h-80 w-auto" alt="" />
+        <p class="">
+          對於初步入社會的新鮮人，我們瞭解你的未解與徬徨，讓元大MA學長姊用自身經驗告訴你，加入這個計畫，將會為一生職業生涯帶來最豐富的收穫。
+        </p>
+      </div>
+      <div></div>
+    </div>
+
+    <!-- section 9 -->
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
+      <p class="text-xl leading-relaxed text-center">
+        元大 MA 計畫招募推廣活動，正緊鑼密鼓的展開，<br />
+        我們將舉辦多場企業說明會、校園博覽會，<br />
+        歡迎各位前來與我們面對面溝通，增進彼此的了解。<br />
+        若你已經開始嚮往成為這裡的一員，請立即參加甄選，邁開人生夢想的第一步！
+      </p>
+    </div>
+
+
+    <!-- section 10 -->
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-2 lg:gap-8">
+        <h1 class="text-3xl font-bold text-center">申請日期</h1>
+        <h1 class="text-3xl font-bold text-center">申請日期</h1>
+        <div class="flex flex-col justify-center rounded-3xl bg-gray-50 border ring-gray-200 p-12 shadow">
+          <div>
+            <h3 class="text-2xl font-bold mb-4 text-center">即日起至</h3>
+            <div class="flex justify-center items-end ">
+              <p class="text-4xl font-bold text-blue-800 me-2">2023-03-19</p>
+              <p class="font-bold">止</p>
+            </div>
           </div>
-          <div class="flex-grow bg-blue-100 h-6"></div>
+        </div>
 
-          <div class="z-10 flex flex-col items-center w-2">
-            <div
-              class="bg-blue-600 rounded-full w-6 h-6 border border-black"
-            ></div>
-            <div class="border-l border-black h-8"></div>
-            <div class="rounded-full w-2 h-2 border border-black"></div>
-            <date class="absolute mt-20 text-lg text-blue-700 font-semibold"
-              >4/10-4/14</date
-            >
-            <p class="absolute mt-28 text-lg">初試面談</p>
-          </div>
-          <div class="flex-grow bg-blue-100 h-6"></div>
-
-          <div class="z-10 flex flex-col items-center w-2">
-            <div
-              class="bg-blue-600 rounded-full w-6 h-6 border border-black"
-            ></div>
-            <div class="border-l border-black h-8"></div>
-            <div class="rounded-full w-2 h-2 border border-black"></div>
-            <date class="absolute mt-20 text-lg text-blue-700 font-semibold"
-              >4/19-4/26</date
-            >
-            <p class="absolute mt-28 text-lg">複試面談</p>
-          </div>
-          <div class="flex-grow bg-blue-100 h-6"></div>
-
-          <div class="z-10 flex flex-col items-center w-2">
-            <div
-              class="bg-blue-600 rounded-full w-6 h-6 border border-black"
-            ></div>
-            <div class="border-l border-black h-8"></div>
-            <div class="rounded-full w-2 h-2 border border-black"></div>
-            <date class="absolute mt-20 text-lg text-blue-700 font-semibold"
-              >5月上旬</date
-            >
-            <p class="absolute mt-28 text-lg">決選面談</p>
-          </div>
-          <div class="flex-grow bg-blue-100 h-6"></div>
-
-          <div class="z-10 flex flex-col items-center w-2">
-            <div
-              class="bg-blue-600 rounded-full w-6 h-6 border border-black"
-            ></div>
-            <div class="border-l border-black h-8"></div>
-            <div class="rounded-full w-2 h-2 border border-black"></div>
-            <date class="absolute mt-20 text-lg text-blue-700 font-semibold"
-              >5月下旬</date
-            >
-            <p class="absolute mt-28 text-lg">錄取通知</p>
-          </div>
-          <div class="flex-grow bg-blue-100 h-6"></div>
-
-          <div class="z-10 flex flex-col items-center w-2">
-            <div
-              class="bg-blue-600 rounded-full w-6 h-6 border border-black"
-            ></div>
-            <div class="border-l border-black h-8"></div>
-            <div class="rounded-full w-2 h-2 border border-black"></div>
-            <date class="absolute mt-20 text-lg text-blue-700 font-semibold"
-              >7/3</date
-            >
-            <p class="absolute mt-28 text-lg">報到時間</p>
+        <div class="rounded-3xl bg-gray-50 border ring-gray-200 p-12 shadow">
+          <div>
+            <ul class="list-none flex flex-col gap-y-2">
+              <li class="flex">
+                <img src="/img/circle.svg" alt="">
+                <span class="ml-4">研究所以上學歷，科系不限。</span>
+              </li>
+              <li class="flex">
+                <img src="/img/circle.svg" alt="">
+                <span class="ml-4">英文流利（具 TOEIC 750 分以上或同等能力證明）。</span>
+              </li>
+              <li class="flex">
+                <img src="/img/circle.svg" alt="">
+                <span class="ml-4">具相關金融證照、海外經驗者優先。</span>
+              </li>
+              <li class="flex">
+                <img src="/img/circle.svg" alt="">
+                <span class="ml-4">主動積極，具市場及財經敏感度，有強烈企圖心，擅長邏輯思考與問題分析解決，溝通及學習力強，樂於接受挑戰者。</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </main>
+    </div>
 
-    <!-- timeline -->
-  </body>
+
+    <!-- section  徵選時程 -->
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
+      <h3 class="text-3xl font-bold text-center mb-8">徵選時程</h3>
+      <div class="relative flex justify-between">
+        <div class="before:absolute before:bg-black before:top-0 before:right-0 before:h-6 before:w-full before:z-10"></div>
+        <div class="z-10 flex flex-col items-center">
+          <div class="bg-blue-600 rounded-full w-6 h-6 border border-black"></div>
+          <div class="border-l border-black h-8"></div>
+          <div class="rounded-full w-2 h-2 border border-black"></div>
+          <div class="mt-20 text-lg text-blue-700 font-semibold">
+            3/19
+          </div>
+          <p class=" mt-28 text-lg">履歷截止收件</p>
+        </div>
+        <!-- <div class="flex-grow bg-blue-100 h-6"></div> -->
+
+        <div class="z-10 flex flex-col items-center">
+          <div class="bg-blue-600 rounded-full w-6 h-6 border border-black"></div>
+          <div class="border-l border-black h-8"></div>
+          <div class="rounded-full w-2 h-2 border border-black"></div>
+          <date class=" mt-20 text-lg text-blue-700 font-semibold">3/23前</date>
+          <p class=" mt-28 text-lg">資格及履歷書面審查</p>
+        </div>
+        <!-- <div class="flex-grow bg-blue-100 h-6"></div> -->
+
+        <div class="z-10 flex flex-col items-center">
+          <div class="bg-blue-600 rounded-full w-6 h-6 border border-black"></div>
+          <div class="border-l border-black h-8"></div>
+          <div class="rounded-full w-2 h-2 border border-black"></div>
+          <date class=" mt-20 text-lg text-blue-700 font-semibold">4/10-4/14</date>
+          <p class=" mt-28 text-lg">初試面談</p>
+        </div>
+        <!-- <div class="flex-grow bg-blue-100 h-6"></div> -->
+
+        <div class="z-10 flex flex-col items-center">
+          <div class="bg-blue-600 rounded-full w-6 h-6 border border-black"></div>
+          <div class="border-l border-black h-8"></div>
+          <div class="rounded-full w-2 h-2 border border-black"></div>
+          <date class=" mt-20 text-lg text-blue-700 font-semibold">4/19-4/26</date>
+          <p class=" mt-28 text-lg">複試面談</p>
+        </div>
+        <!-- <div class="flex-grow bg-blue-100 h-6"></div> -->
+
+        <div class="z-10 flex flex-col items-center">
+          <div class="bg-blue-600 rounded-full w-6 h-6 border border-black"></div>
+          <div class="border-l border-black h-8"></div>
+          <div class="rounded-full w-2 h-2 border border-black"></div>
+          <date class=" mt-20 text-lg text-blue-700 font-semibold">5月上旬</date>
+          <p class=" mt-28 text-lg">決選面談</p>
+        </div>
+        <!-- <div class="flex-grow bg-blue-100 h-6"></div> -->
+
+        <div class="z-10 flex flex-col items-center">
+          <div class="bg-blue-600 rounded-full w-6 h-6 border border-black"></div>
+          <div class="border-l border-black h-8"></div>
+          <div class="rounded-full w-2 h-2 border border-black"></div>
+          <date class=" mt-20 text-lg text-blue-700 font-semibold">5月下旬</date>
+          <p class=" mt-28 text-lg">錄取通知</p>
+        </div>
+        <!-- <div class="flex-grow bg-blue-100 h-6"></div> -->
+
+        <div class="z-10 flex flex-col items-center">
+          <div class="bg-blue-600 rounded-full w-6 h-6 border border-black"></div>
+          <div class="border-l border-black h-8"></div>
+          <div class="rounded-full w-2 h-2 border border-black"></div>
+          <date class=" mt-20 text-lg text-blue-700 font-semibold">7/3</date>
+          <p class=" mt-28 text-lg">報到時間</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 10 -->
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20">
+      <div class="flex flex-col sm:grid-cols-2 lg:grid-cols-2 lg:gap-8">
+        <h1 class="text-3xl font-bold text-center">徵才活動</h1>
+        <div class="flex justify-between items-center rounded-3xl bg-blue-800 border ring-gray-200 p-12 shadow">
+          <div>
+            <h3 class="text-md font-bold mb-4 p-2 w-fit bg-blue-50 text-blue-800 rounded-3xl border border-blue-200 ">
+              企業說明會</h3>
+            <div class="flex items-center mb-4">
+              <p class="font-bold text-white me-2">2024</p>
+              <p class="text-4xl font-bold text-white me-2">03.23</p>
+              <p class="font-bold text-white me-2">(六)</p>
+              <p class="font-bold text-white">10:00-12:00</p>
+            </div>
+            <a class="font-bold text-white" href="">元大金控總部大樓 ( 台北市敦化南路一段66號 ) </a>
+          </div>
+          <button type="button"
+            class="rounded-md flex items-center bg-white h-12 px-12 py-8 text-lg font-semibold text-black shadow-sm hover:bg-blue-50 sm:ml-3 sm:w-auto">立即報名</button>
+        </div>
+
+        <div class="rounded-3xl bg-gray-50 border ring-gray-200 p-12 shadow">
+          <div>
+            <ul class="list-none flex flex-col gap-y-2">
+              <li class="flex">
+                <img src="/img/circle.svg" alt="">
+                <span class="ml-4">研究所以上學歷，科系不限。</span>
+              </li>
+              <li class="flex">
+                <img src="/img/circle.svg" alt="">
+                <span class="ml-4">英文流利（具 TOEIC 750 分以上或同等能力證明）。</span>
+              </li>
+              <li class="flex">
+                <img src="/img/circle.svg" alt="">
+                <span class="ml-4">具相關金融證照、海外經驗者優先。</span>
+              </li>
+              <li class="flex">
+                <img src="/img/circle.svg" alt="">
+                <span class="ml-4">主動積極，具市場及財經敏感度，有強烈企圖心，擅長邏輯思考與問題分析解決，溝通及學習力強，樂於接受挑戰者。</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- timeline -->
+</body>
+
 </html>
