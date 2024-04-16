@@ -16,21 +16,97 @@
   </head>
 
   <body class="flex flex-col overflow-x-hidden">
-    <header class="relative z-50 w-full py-4 bg-blue-800">
-      <nav class="mx-auto max-w-full px-4 sm:px-6 lg:px-8 flex justify-between">
-        <a href="">
-          <img
-            src="https://hr.yuanta.com/MA/assets/images/brand-white.svg"
-            class="w-auto h-10"
-            alt=""
-          />
+    <nav
+      class="bg-white border-gray-200 dark:bg-gray-900 fixed top-0 w-full z-50"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 px-4 sm:px-6 lg:px-8"
+      >
+        <a
+          href="index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src="/img/Logo/FHC/英文.svg" class="h-8" alt="#" />
         </a>
-      </nav>
-    </header>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+          id="navbarToggler"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbarCollapse">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="#yuanta"
+                class="ud-menu-scroll block py-2 px-3 text-blue-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >關於元大</a
+              >
+            </li>
+            <li>
+              <a
+                href="#plan"
+                class="ud-menu-scroll block py-2 px-3 text-blue-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >關於MA計畫</a
+              >
+            </li>
+            <li>
+              <a
+                href="#share"
+                class="ud-menu-scroll block py-2 px-3 text-blue-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >學長姊分享</a
+              >
+            </li>
+            <li>
+              <a
+                href="#join"
+                class="ud-menu-scroll block py-2 px-3 text-blue-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >加入元大</a
+              >
+            </li>
+            <li>
+              <a
+                href="#QA"
+                class="ud-menu-scroll block py-2 px-3 text-blue-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >常見問題</a
+              >
+            </li>
+            <li>
+              <a
+                href="#content"
+                class="ud-menu-scroll block py-2 px-3 text-blue-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >聯絡我們</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <main>
       <div
-        class="min-h-screen flex flex-1 shrink-0 items-center justify-center mb-28 bg-blue-50"
+        class="min-h-screen flex flex-1 shrink-0 items-center justify-center  bg-blue-50"
       >
         <!-- image - start -->
         <img
@@ -41,10 +117,11 @@
         />
         <!-- image - end -->
       </div>
-      <!-- section 1 -->
+      <!-- section 1 關於元大 -->
       <div
-        class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-28 wow animate__animated animate__fadeInUp"
+        class="mx-auto max-w-7xl px-4 mt-28 sm:px-6 lg:px-8 pb-28 wow animate__animated animate__fadeInUp"
         data-wow-delay="0.5s"
+        id="yuanta"
       >
         <h2
           class="text-4xl leading-relaxed font-bold text-blue-800 text-center pb-6"
@@ -113,17 +190,17 @@
           <!-- plan - end -->
         </div>
       </div>
-      <!-- section 3 -->
+      <!-- section 3 文案 -->
       <div
-        class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-28 wow animate__animated animate__fadeInUp"
+        class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8  wow animate__animated animate__fadeInUp"
         data-wow-delay="0.5s"
       >
         <p class="text-xl leading-relaxed text-center">
           我們正在尋找一群具備市場財經敏感度、擅長以邏輯分析解決問題，<br />並且擁有良好溝通協調與學習能力的菁英人才，參與這項嚴密的育才計畫。<br />透過由廣而深、由深而博的專精訓練，引導MA在歷練中成熟、獨當一面，逐步成為業界佼佼者。
         </p>
       </div>
-      <!-- section 4 -->
-      <div class="relative flex py-20 items-center justify-center">
+      <!-- section 4 banner -->
+      <div class="relative flex py-20 mt-28 items-center justify-center">
         <img
           src="https://salient.tailwindui.com/_next/static/media/background-call-to-action.6a5a5672.jpg"
           loading="lazy"
@@ -137,12 +214,13 @@
           </p>
         </div>
       </div>
-      <!-- section 5&6 培訓架構＆職涯發展 -->
+      <!-- section 5&6 關於MA計畫-->
       <div class="bg-blue-50 py-24 mb-16">
         <!-- section 5 培訓架構 -->
         <div
           class="mx-auto max-w-7xl px-4 pb-28 pt-8 sm:px-6 lg:px-8 wow animate__animated animate__fadeInUp"
           data-wow-delay="0.5s"
+          id="plan"
         >
           <h3 class="text-3xl font-bold text-center mb-8">培訓架構</h3>
           <p
@@ -307,6 +385,7 @@
       <div
         class="grid gap-8 mx-auto max-w-7xl pb-28 px-4 sm:px-6 lg:px-8 wow animate__animated animate__fadeInUp"
         data-wow-delay="0.5s"
+        id="share"
       >
         <div class="flex gap-8 items-center">
           <img src="/img/Frame 16.svg" class="w-1/2" alt="" />
@@ -355,6 +434,7 @@
         <div
           class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-20 wow animate__animated animate__fadeInUp"
           data-wow-delay="0.5s"
+          id="join"
         >
           <p class="text-xl leading-relaxed text-center text-neutral-700">
             元大 MA 計畫招募推廣活動，正緊鑼密鼓的展開，<br />
@@ -578,6 +658,7 @@
       <div
         class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40 wow animate__animated animate__fadeInUp"
         data-wow-delay="0.5s"
+        id="QA"
       >
         <h3 class="text-3xl font-bold text-center mb-8">常見問題</h3>
         <h3 class="text-xl font-bold text-neutral-600 mb-4 border-b pb-2">
@@ -586,7 +667,7 @@
         <div
           class="divide-y divide-gray-100 overflow-hidden rounded-lg border border-gray-200 bg-white mb-12"
         >
-          <details class="group" open>
+          <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between p-4 text-lg font-medium text-secondary-900 group-open:bg-blue-50"
             >
@@ -819,6 +900,7 @@
     <footer class="relative">
       <div
         class="absolute bg-blue-700 -top-24 left-8 right-8 md:left-0 md:right-0 text-center flex flex-col items-center gap-4 text-white p-8 mx-auto max-w-[1214px] rounded-2xl"
+        id="content"
       >
         <h3>歡迎加入</h3>
         <img src="/img/fb.svg" class="w-32 h-auto" alt="" />
@@ -906,13 +988,55 @@
     </footer>
 
     <a
-        href="javascript:void(0)"
-        class="bg-blue-600 text-white fixed text-base bottom-8 right-8 rounded-lg p-2 z-50 hover:bg-black shadow-md transition
-        duration-300 ease-in-out back-to-top hidden"
-      >
-        Top
+      href="javascript:void(0)"
+      class="bg-blue-600 text-white fixed text-base bottom-8 right-8 rounded-lg p-2 z-50 hover:bg-black shadow-md transition duration-300 ease-in-out back-to-top hidden"
+    >
+      Top
     </a>
     <!-- script -->
     <script src="/main.js"></script>
+    <script>
+      // ==== for menu scroll
+      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+      pageLink.forEach((elem) => {
+        elem.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(elem.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            offsetTop: 1 - 60,
+          });
+        });
+      });
+
+      // section menu active
+      function onScroll(event) {
+        const sections = document.querySelectorAll(".ud-menu-scroll");
+        const scrollPos =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
+
+        for (let i = 0; i < sections.length; i++) {
+          const currLink = sections[i];
+          const val = currLink.getAttribute("href");
+          const refElement = document.querySelector(val);
+          const scrollTopMinus = scrollPos + 73;
+          if (
+            refElement.offsetTop <= scrollTopMinus &&
+            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+          ) {
+            document
+              .querySelector(".ud-menu-scroll")
+              .classList.remove("active");
+            currLink.classList.add("active");
+          } else {
+            currLink.classList.remove("active");
+          }
+        }
+      }
+
+      window.document.addEventListener("scroll", onScroll);
+    </script>
   </body>
 </html>
